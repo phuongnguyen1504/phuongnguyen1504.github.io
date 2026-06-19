@@ -7301,6 +7301,53 @@ nav.navbar.navbar-expand-lg.fixed-top.bg-primary {
 }
 
 
+/* Skill Tags */
+.cc-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.cc-tag {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.cc-tag-primary {
+  background: #e8f0fb;
+  color: #1a3a5c;
+  border: 1px solid #b8d0ee;
+}
+
+.cc-tag-secondary {
+  background: #eef6ff;
+  color: #2e86de;
+  border: 1px solid #a8d4f8;
+}
+
+.cc-tag-db {
+  background: #f0f4f8;
+  color: #4a6080;
+  border: 1px solid #c8d8e8;
+}
+
+.cc-tag-cloud {
+  background: #e8f4fd;
+  color: #1565a8;
+  border: 1px solid #a0c8f0;
+}
+
+.cc-tag-ai {
+  background: #1a3a5c;
+  color: #fff;
+  border: 1px solid #1a3a5c;
+}
+
   /*div#my-div {
     float: right;
     margin-top: -73px;

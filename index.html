@@ -52,11 +52,20 @@
                 <div class="cc-profile-image"><a href="#"><img src="images/ProfileT1.png" alt="Image" /></a></div>
                 <div class="h2 title">Nguyen Anh Phuong</div>
                 <p class="category text-white">Java Software Engineer &nbsp;|&nbsp; AI Engineer</p>
-                <!-- <a class="btn btn-primary smooth-scroll mr-2"
-                  href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">CONTACT ME</a><a
-                  class="btn btn-primary" href="https://www.linkedin.com/in/phuong-nguyen-514462214/"
-                  data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank" style="width: 167px">LINKEDIN
-                  PROFILE</a> -->
+                <div style="margin-top: 20px;">
+                  <a class="btn btn-primary smooth-scroll mr-2" href="#contact"
+                    data-aos="zoom-in" data-aos-anchor="data-aos-anchor">
+                    <i class="fa fa-envelope"></i> Contact Me
+                  </a>
+                  <a class="btn btn-primary mr-2" href="https://www.linkedin.com/in/phuong-nguyen-anh-514462214"
+                    data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">
+                    <i class="fa fa-linkedin"></i> LinkedIn
+                  </a>
+                  <a class="btn btn-default" href="https://github.com/phuongnguyen1504"
+                    data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">
+                    <i class="fa fa-github"></i> GitHub
+                  </a>
+                </div>
               </div>
             </div>
             <div class="section">
@@ -136,6 +145,29 @@
           </div>
         </div>
       </div>
+      <div class="section" style="padding: 30px 0; background: #f8f9fa;">
+        <div class="container">
+          <div class="row text-center" data-aos="fade-up" data-aos-offset="10">
+            <div class="col-6 col-md-3" style="padding: 20px 0;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">3+</div>
+              <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Years Experience</div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 20px 0;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">4</div>
+              <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Enterprise Projects</div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 20px 0;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">100M+</div>
+              <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Records Migrated</div>
+            </div>
+            <div class="col-6 col-md-3" style="padding: 20px 0;">
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">&gt;90%</div>
+              <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Test Coverage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="section" id="skill">
         <div class="container">
           <div class="h4 text-center mb-4 title">Technical Skills</div>
@@ -231,6 +263,36 @@
                   </div>
                 </div>
               </div>
+
+              <hr style="margin: 28px 0 20px;">
+              <div class="text-center">
+                <p style="font-size:0.8rem; text-transform:uppercase; letter-spacing:1px; color:#999; margin-bottom:14px;">Tech Stack</p>
+                <div class="cc-skill-tags">
+                  <span class="cc-tag cc-tag-primary">Java</span>
+                  <span class="cc-tag cc-tag-primary">Spring Boot</span>
+                  <span class="cc-tag cc-tag-primary">Spring Batch</span>
+                  <span class="cc-tag cc-tag-primary">Python</span>
+                  <span class="cc-tag cc-tag-primary">TypeScript</span>
+                  <span class="cc-tag cc-tag-secondary">ReactJS</span>
+                  <span class="cc-tag cc-tag-secondary">NextJS</span>
+                  <span class="cc-tag cc-tag-secondary">NodeJS</span>
+                  <span class="cc-tag cc-tag-secondary">GraphQL</span>
+                  <span class="cc-tag cc-tag-secondary">REST API</span>
+                  <span class="cc-tag cc-tag-db">MySQL</span>
+                  <span class="cc-tag cc-tag-db">PostgreSQL</span>
+                  <span class="cc-tag cc-tag-db">Oracle</span>
+                  <span class="cc-tag cc-tag-db">Redis</span>
+                  <span class="cc-tag cc-tag-db">MongoDB</span>
+                  <span class="cc-tag cc-tag-cloud">AWS S3</span>
+                  <span class="cc-tag cc-tag-cloud">Docker</span>
+                  <span class="cc-tag cc-tag-cloud">Git</span>
+                  <span class="cc-tag cc-tag-ai">Claude AI</span>
+                  <span class="cc-tag cc-tag-ai">LLM Workflows</span>
+                  <span class="cc-tag cc-tag-ai">MCP</span>
+                  <span class="cc-tag cc-tag-ai">AI Agents</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -439,13 +501,13 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="card-body">
-                          <form action="https://formspree.io/phuong.misadng@gmail.com" method="POST">
+                          <form id="contactForm">
                             <div class="p pb-3"><strong>Feel free to contact me </strong></div>
                             <div class="row mb-3">
                               <div class="col">
                                 <div class="input-group"><span class="input-group-addon"><i
                                       class="fa fa-user-circle"></i></span>
-                                  <input class="form-control" type="text" name="name" placeholder="name"
+                                  <input class="form-control" type="text" id="contactName" placeholder="Your name"
                                     required="required" />
                                 </div>
                               </div>
@@ -454,7 +516,7 @@
                               <div class="col">
                                 <div class="input-group"><span class="input-group-addon"><i
                                       class="fa fa-file-text"></i></span>
-                                  <input class="form-control" type="text" name="Subject" placeholder="subject"
+                                  <input class="form-control" type="text" id="contactSubject" placeholder="Subject"
                                     required="required" />
                                 </div>
                               </div>
@@ -463,7 +525,7 @@
                               <div class="col">
                                 <div class="input-group"><span class="input-group-addon"><i
                                       class="fa fa-envelope"></i></span>
-                                  <input class="form-control" type="email" name="_replyto" placeholder="e-mail"
+                                  <input class="form-control" type="email" id="contactEmail" placeholder="Your e-mail"
                                     required="required" />
                                 </div>
                               </div>
@@ -471,17 +533,32 @@
                             <div class="row mb-3">
                               <div class="col">
                                 <div class="form-group">
-                                  <textarea class="form-control" name="message" placeholder="your message"
+                                  <textarea class="form-control" id="contactMessage" placeholder="Your message"
                                     required="required"></textarea>
                                 </div>
                               </div>
                             </div>
                             <div class="row">
                               <div class="col">
-                                <button class="btn btn-primary" type="submit">SEND</button>
+                                <button class="btn btn-primary" type="submit">
+                                  <i class="fa fa-paper-plane"></i> SEND
+                                </button>
                               </div>
                             </div>
                           </form>
+                          <script>
+                            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                              e.preventDefault();
+                              var name    = document.getElementById('contactName').value;
+                              var subject = document.getElementById('contactSubject').value;
+                              var email   = document.getElementById('contactEmail').value;
+                              var message = document.getElementById('contactMessage').value;
+                              var body    = 'From: ' + name + ' (' + email + ')\n\n' + message;
+                              window.location.href = 'mailto:phuong.misadng@gmail.com'
+                                + '?subject=' + encodeURIComponent(subject)
+                                + '&body='    + encodeURIComponent(body);
+                            });
+                          </script>
                         </div>
                       </div>
                       <div class="col-md-6">
