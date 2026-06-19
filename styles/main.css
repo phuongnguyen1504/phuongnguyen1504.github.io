@@ -7348,6 +7348,26 @@ nav.navbar.navbar-expand-lg.fixed-top.bg-primary {
   border: 1px solid #1a3a5c;
 }
 
+/* Hero navy gradient overlay (overrides Now UI Kit's black :before) */
+.profile-page .page-header:before {
+  background: linear-gradient(160deg, rgba(26, 58, 92, 0.88) 0%, rgba(20, 40, 70, 0.75) 100%);
+}
+
+/* Mobile hero: ensure CTA buttons wrap cleanly */
+@media (max-width: 576px) {
+  .page-header .content-center > div[style] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px !important;
+  }
+  .page-header .content-center .btn {
+    font-size: 0.82rem;
+    padding: 8px 16px;
+  }
+}
+
   /*div#my-div {
     float: right;
     margin-top: -73px;
