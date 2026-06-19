@@ -156,7 +156,7 @@
               <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Years Experience</div>
             </div>
             <div class="col-6 col-md-3" style="padding: 20px 0;">
-              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">4</div>
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">5</div>
               <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Enterprise Projects</div>
             </div>
             <div class="col-6 col-md-3" style="padding: 20px 0;">
@@ -386,7 +386,7 @@
           </div>
 
           <!-- PB Estimation -->
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
+          <div class="card" data-aos="fade-up" data-aos-offset="10" style="margin-bottom:20px;">
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
@@ -408,6 +408,36 @@
                     <li>Implemented drag &amp; drop (DND Kit), customized to support both horizontal and vertical reordering as required</li>
                     <li>Built a custom algorithm to handle position changes smoothly, ensuring lag-free UI interactions during drag operations</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chiba University -->
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Oct 2022 – May 2023</p>
+                  <div class="h5">Full-Stack Developer</div>
+                  <p style="font-size:0.8rem; margin-top:8px;">ExpressJS · ReactJS · MySQL · Redis · WebSocket</p>
+                  <p style="font-size:0.8rem;">Team size: 5</p>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Schedule Board – Chiba University</div>
+                  <p class="category">Professor Schedule Management · Client: Chiba University (Japan) · Toppa Solution</p>
+                  <p>Web app for professors at Chiba University to manage their schedules — create meetings, book meeting rooms, and attach documents to calendar events. Used exclusively by the university's academic staff.</p>
+                  <p><strong>Key responsibilities:</strong></p>
+                  <ul style="margin: 6px 0 10px; padding-left: 1.3rem; font-size:0.92rem;">
+                    <li>Maintained and extended the system with a drag &amp; drop time schedule feature, allowing professors to reschedule meetings intuitively</li>
+                    <li>Integrated email notification to automatically remind all relevant participants when a meeting is scheduled or updated</li>
+                    <li>Built new APIs and reworked UI components to match an updated Figma design</li>
+                    <li>Implemented file attachment functionality for meeting documents</li>
+                  </ul>
+                  <p><strong>Technical challenge — Single-session login via WebSocket:</strong> The system required that each account could only be logged in on one device at a time. During implementation, three edge cases surfaced: (1) dropped connections where the server hadn't yet received a disconnect event, (2) race conditions when multiple devices logged in nearly simultaneously, and (3) users opening multiple browser tabs.</p>
+                  <p>Resolved by: adding a <strong>heartbeat mechanism</strong> to detect dead connections, implementing an atomic session-update per userId to eliminate race conditions, and introducing a <strong>deviceId</strong> to distinguish sessions on the same device. Added a server-side API session check as a fallback to force logout even when the WebSocket event was missed.</p>
                 </div>
               </div>
             </div>

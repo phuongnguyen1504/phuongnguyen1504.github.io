@@ -156,7 +156,7 @@
               <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Năm kinh nghiệm</div>
             </div>
             <div class="col-6 col-md-3" style="padding: 20px 0;">
-              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">4</div>
+              <div style="font-size: 2.2rem; font-weight: 700; color: #1a3a5c;">5</div>
               <div style="font-size: 0.85rem; color: #666; text-transform: uppercase; letter-spacing: 1px;">Dự án doanh nghiệp</div>
             </div>
             <div class="col-6 col-md-3" style="padding: 20px 0;">
@@ -386,7 +386,7 @@
           </div>
 
           <!-- PB Estimation -->
-          <div class="card" data-aos="fade-up" data-aos-offset="10">
+          <div class="card" data-aos="fade-up" data-aos-offset="10" style="margin-bottom:20px;">
             <div class="row">
               <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-experience-header">
@@ -399,7 +399,7 @@
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
                   <div class="h5">PB_Estimation – Ước tính chi phí sơn công trình</div>
-                  <p class="category">Công cụ Sales · Khách hàng: Astec Paint (Nhật Bản) · Toppa Solution</p>
+                  <p class="category">Công cụ Sales · Khách hàng: Astec Paint (Nhật Bản) · Rikkeisoft</p>
                   <p>Web app dành cho đội sales của Astec Paint (công ty sơn Nhật Bản) để lập estimate chi phí công trình — bao gồm loại sơn, số lượng, màu sắc, thời gian bảo hành — phục vụ quá trình tư vấn và đàm phán với khách hàng.</p>
                   <p><strong>Công việc chính:</strong></p>
                   <ul style="margin: 6px 0 10px; padding-left: 1.3rem; font-size:0.92rem;">
@@ -407,6 +407,40 @@
                     <li>Thiết kế schema DB mới để lưu sort order của từng item theo từng công trình và tính toán chi phí</li>
                     <li>Triển khai tính năng drag &amp; drop (DND Kit), tùy chỉnh — hỗ trợ kéo thả cả chiều ngang lẫn chiều dọc</li>
                     <li>Tự xây dựng thuật toán xử lý thay đổi vị trí item để đảm bảo UI mượt mà, không giật lag</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule Board – Chiba University -->
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+              <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-experience-header">
+                  <p>Tháng 10/2022 – 5/2023</p>
+                  <div class="h5">Full-Stack Developer</div>
+                  <p style="font-size:0.8rem; margin-top:8px;">ExpressJS · ReactJS · MySQL · Redis · WebSocket · Nginx · Docker</p>
+                  <p style="font-size:0.8rem;">Team size: 5</p>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Schedule Board – Quản lý lịch giảng viên Đại học Chiba</div>
+                  <p class="category">Ứng dụng quản lý lịch · Khách hàng: Chiba University (Nhật Bản) · Toppa Solution</p>
+                  <p>Web app giúp giảng viên Đại học Chiba đăng ký và quản lý lịch họp, đặt phòng họp, đính kèm tài liệu cuộc họp và nhận thông báo qua email.</p>
+                  <p><strong>Công việc chính:</strong></p>
+                  <ul style="margin: 6px 0 10px; padding-left: 1.3rem; font-size:0.92rem;">
+                    <li>Xây dựng tính năng drag &amp; drop trên calendar để sắp xếp lịch họp trực quan</li>
+                    <li>Tích hợp gửi email nhắc lịch họp tự động cho giảng viên</li>
+                    <li>Viết các API mới theo thiết kế Figma: quản lý phòng họp, tài liệu đính kèm, tìm kiếm lịch</li>
+                  </ul>
+                  <p><strong>Thách thức kỹ thuật:</strong> Xử lý bài toán single-session login qua WebSocket — mỗi tài khoản chỉ được đăng nhập từ một thiết bị tại một thời điểm. Giải pháp:</p>
+                  <ul style="margin: 6px 0 10px; padding-left: 1.3rem; font-size:0.92rem;">
+                    <li>Heartbeat định kỳ để phát hiện và xóa kết nối WebSocket bị ngắt âm thầm (zombie connection)</li>
+                    <li>Lưu session theo userId trong Redis, cập nhật atomic khi có đăng nhập mới từ thiết bị khác</li>
+                    <li>Gắn <code>deviceId</code> vào mỗi tab trình duyệt để phân biệt multi-tab của cùng một người dùng</li>
+                    <li>Fallback kiểm tra session ở tầng API để đảm bảo tính toàn vẹn khi WebSocket bị gián đoạn</li>
                   </ul>
                 </div>
               </div>
